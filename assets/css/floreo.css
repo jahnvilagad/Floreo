@@ -10,8 +10,8 @@
   }
   
   @font-face {
-	font-family: "OpenSans";
-	src: url("../fonts/OpenSans.ttf") format("truetype");
+	font-family: "Raleway-Regular";
+	src: url("../fonts/Raleway-Regular.ttf") format("truetype");
   }
 :root {
 	--ar-blue: #0d6efd;
@@ -62,10 +62,10 @@
 	--ar-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 	--ar-root-font-size: 1rem;
 	--ar-body-font-family: var(--ar-font-sans-serif);
-	--ar-body-font-size: 1rem;
+	--ar-body-font-size: 14px;
 	--ar-body-font-weight: 400;
 	--ar-body-line-height: 1.5;
-	--ar-body-color: #576071;
+	--ar-body-color: #6d6d6d;
 	--ar-body-bg: #fff;
 	--ar-border-width: 1px;
 	--ar-border-style: solid;
@@ -280,7 +280,7 @@ sup {
 
 a {
 	color: #5e5e5e;
-	text-decoration: underline
+	text-decoration: unset;
 }
 
 a:hover {
@@ -3172,11 +3172,11 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
-	--ar-btn-padding-x: 1.75rem;
-	--ar-btn-padding-y: 0.825rem;
+	--ar-btn-padding-x: 12px;
+    --ar-btn-padding-y: 6px;
 	--ar-btn-font-family: ;
 	--ar-btn-font-size: calc(var(--ar-body-font-size) * 0.875);
-	--ar-btn-font-weight: 600;
+	--ar-btn-font-weight: bold;
 	--ar-btn-line-height: 1.4;
 	--ar-btn-color: #576071;
 	--ar-btn-bg: transparent;
@@ -3203,7 +3203,7 @@ textarea.form-control.is-invalid {
 	-moz-user-select: none;
 	user-select: none;
 	border: var(--ar-btn-border-width) solid var(--ar-btn-border-color);
-	border-radius: var(--ar-btn-border-radius);
+	border-radius: 3px;
 	background-color: var(--ar-btn-bg);
 	transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .2s ease-in-out
 }
@@ -3269,20 +3269,20 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-	--ar-btn-color: #000;
-	--ar-btn-bg: #448c74;
-	--ar-btn-border-color: #448c74;
-	--ar-btn-hover-color: #000;
-	--ar-btn-hover-bg: #609d89;
-	--ar-btn-hover-border-color: #579882;
-	--ar-btn-focus-shadow-rgb: 58, 119, 99;
-	--ar-btn-active-color: #000;
-	--ar-btn-active-bg: #69a390;
-	--ar-btn-active-border-color: #579882;
-	--ar-btn-active-shadow: unset;
-	--ar-btn-disabled-color: #000;
-	--ar-btn-disabled-bg: #448c74;
-	--ar-btn-disabled-border-color: #448c74
+    --ar-btn-color: #000;
+    --ar-btn-bg: #03565a;
+    --ar-btn-border-color: #03565a;
+    --ar-btn-hover-color: #000;
+    --ar-btn-hover-bg: #609d89;
+    --ar-btn-hover-border-color: #579882;
+    --ar-btn-focus-shadow-rgb: 58, 119, 99;
+    --ar-btn-active-color: #000;
+    --ar-btn-active-bg: #69a390;
+    --ar-btn-active-border-color: #579882;
+    --ar-btn-active-shadow: unset;
+    --ar-btn-disabled-color: #000;
+    --ar-btn-disabled-bg: #448c74;
+    --ar-btn-disabled-border-color: #448c74;
 }
 
 .btn-secondary {
@@ -4116,7 +4116,8 @@ fieldset:disabled .btn {
 	flex-wrap: wrap;
 	padding-left: 0;
 	margin-bottom: 0;
-	list-style: none
+	list-style: none;
+	
 }
 
 .nav-link {
@@ -4128,6 +4129,7 @@ fieldset:disabled .btn {
 	text-decoration: none;
 	transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
 	position: relative;
+	font-family:"Raleway-Regular";
 }
 
 @media(prefers-reduced-motion: reduce) {
@@ -8879,7 +8881,7 @@ fieldset:disabled .btn {
 
 .text-primary {
 	--ar-text-opacity: 1;
-	color: rgba(var(--ar-primary-rgb), var(--ar-text-opacity)) !important
+	color: #03565a !important
 }
 
 .text-secondary {
@@ -16114,7 +16116,7 @@ kbd {
 
 .table thead th,
 .table tbody th {
-	color: var(--ar-table-th-color) !important
+	color: #6d6d6d !important
 }
 
 .table-dark {
@@ -16124,7 +16126,7 @@ kbd {
 }
 
 .table>:not(:last-child)>:last-child>* {
-	border-bottom-color: #c3d0dc
+	border-bottom-color: #eceae4
 }
 
 .table.table-dark>:not(:last-child)>:last-child>* {
@@ -16654,13 +16656,13 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .btn-primary {
-	--ar-btn-hover-color: #fff;
-	--ar-btn-active-color: #fff;
-	--ar-btn-hover-bg: #37715d;
-	--ar-btn-active-bg: #37715d;
-	--ar-btn-hover-border-color: #37715d;
-	--ar-btn-active-border-color: #37715d;
-	--ar-btn-disabled-color: #fff
+    --ar-btn-hover-color: #fff;
+    --ar-btn-active-color: #fff;
+    --ar-btn-hover-bg: #03565a;
+    --ar-btn-active-bg: #03565a;
+    --ar-btn-hover-border-color: #03565a;
+    --ar-btn-active-border-color: #03565a;
+    --ar-btn-disabled-color: #fff;
 }
 
 .btn-secondary {
@@ -16779,7 +16781,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .btn-icon {
-	--ar-btn-size: 3rem;
+	--ar-btn-size: 2rem;
 	flex-shrink: 0;
 	width: var(--ar-btn-size);
 	height: var(--ar-btn-size);
