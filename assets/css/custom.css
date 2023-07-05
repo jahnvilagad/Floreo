@@ -209,8 +209,19 @@ li.nav-item:last-child .nav-link::after {
 }
 
 .floreo-border{
-  padding: .75rem;
+  padding: .55rem;
   border: 1px solid #ebebeb;
+}
+
+.about-border:after {
+  content: '';
+  position: absolute;
+  background: #ddd;
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
 }
 
 @media (max-width:991px){
