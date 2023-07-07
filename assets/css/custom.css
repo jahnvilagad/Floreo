@@ -209,8 +209,79 @@ li.nav-item:last-child .nav-link::after {
 }
 
 .floreo-border{
-  padding: .75rem;
+  padding: .55rem;
   border: 1px solid #ebebeb;
+}
+
+.about-border:after {
+  content: '';
+  position: absolute;
+  background: #ddd;
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+}
+
+.swiper-slide.bg-light{
+  background-color: #fff !important;
+}
+
+/*gallery-testimonial css start*/
+.gallery-testimonial {
+  width: 100%;
+  /* max-width: 620px; */
+  margin-bottom: 40px;
+}
+.gallery-slider {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+.gallery-slider .swiper-slide {
+  width: auto;
+}
+.gallery-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-thumbs {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.gallery-thumbs .swiper-slide {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.6;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+.gallery-thumbs .swiper-slide img {
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+}
+/*gallery-testimonial css end*/
+
+.banner button{
+  display: none;
+}
+.swiper-img{
+  width: 1920px;
+  height: 580px;
+}
+.swiper-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width:991px){
