@@ -58,7 +58,7 @@
         height: 2.75rem;
         margin-bottom: .75rem;
         vertical-align: text-bottom;
-        background-color: #d7dde2; 
+        background-color: #03565a; 
         border-radius: 50%;
         opacity: 0;
         -webkit-animation: spinner .75s linear infinite;
@@ -90,6 +90,20 @@
         }
       }
 
+      body::-webkit-scrollbar {
+        width: 6px;
+        height: 0px;
+        transition: .3s background;
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background: #03565a;
+      }
+      
+      body:hover::-webkit-scrollbar-thumb {
+        background: #03565a;
+      }
+
 
 header {
   box-shadow: 0 2px 0 rgba(0,0,0,.1);
@@ -114,10 +128,12 @@ li.nav-item:last-child .nav-link::after {
   font-size: 16px;
 }
 
-.navigation .nav-link{
+.navigation .nav-link::after{
   content: unset;
   position: unset;
 }
+
+
 
 .floreo-service .col-md-4{
   border-right: 1px solid #ebebeb;
@@ -159,4 +175,74 @@ li.nav-item:last-child .nav-link::after {
 
 .table .btn-primay{
   font-family: "Lato-Regular";
+}
+
+.text-lato{
+  font-family: "Lato-Regular";
+}
+
+.swiper .bi{
+  color: rgba(0,0,0,0.2) !important;
+}
+
+.swiper .bi-chevron-left::before , .swiper .bi-chevron-right::before{
+  font-weight: bold !important;
+}
+
+.floreo-video{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testimonial-border {
+  background: #efefef;
+  height: 3px;
+  width: 175px;
+  margin: 15px auto;
+}
+
+.phlebotomy-border {
+  background: #03565a;
+  height: 1px;
+  margin: 2px auto;
+  width: 52%;
+}
+
+.floreo-border{
+  padding: .75rem;
+  border: 1px solid #ebebeb;
+}
+
+@media (max-width:991px){
+  .navigation{
+    background: unset;
+  }
+  .nav-link::after{
+    content: unset;
+    position: unset;
+  }
+  header{
+    box-shadow: unset;
+  }
+  .navigation .nav-link{
+    font-family: "Raleway-Regular";
+    font-size: 13px;
+  }
+  .navigation .navbar-nav{
+      padding-top: 0;
+      padding-bottom: .75rem;
+  }
+  .navbar-nav{
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width:767px){
+    .gallery-item img{
+       width: 100%;
+       margin-bottom: 1rem;
+    }
+    .breadcrumb-item {
+      font-size: 14px;
+  }
 }
