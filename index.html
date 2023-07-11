@@ -117,7 +117,26 @@
                 </div>
                 <button class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle" type="button"><i class="bi-arrow-left"></i></button>
                 <button class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle" type="button"><i class="bi-arrow-right"></i></button>
+        </div>
+
+        <div class="slider-bg py-4">
+            <div class="container">
+              <div class="row">
+                 <div class="col-md-6 col-lg-6">
+                    <p class="mb-0 fs-4 text-white fw-bold"><i class="bi bi-envelope-fill"></i>
+                      <a class="text-white" href="mailto:phlebotomy@floreo.co.uk">phlebotomy@floreo.co.uk</a> | 
+                      <i class="bi bi-telephone-fill"></i>
+                      <a class="text-white" href="tel:0203 617 1137">0203 617 1137</a></p>
+                 </div>
+                 <div class="col-md-6 col-lg-4 mt-3 mt-md-0">
+                    <p class="mb-0 fs-4 text-white"><i class="bi bi-calendar3"></i> <span class="fw-bold">Upcoming Course</span> 22-23 July</p>
+                 </div>
+                 <div class="col-md-2 mt-3 mt-lg-0">
+                    <a class="btn btn-outline-light px-4 py-2 btn-view">VIEW ALL DATES</a>
+                 </div>
               </div>
+            </div>
+        </div>
       </section>
 
 
@@ -149,7 +168,7 @@
         </section>
          
 
-      <section class="container">
+      <section class="container" id="scrollHere">
         <div class="row">
           <div class="col-md-12">
             <div class="table-responsive">
@@ -643,6 +662,11 @@
           delay: 5000
         },
       });
+
+
+      $(".btn-view").click(function() {
+        document.getElementById("scrollHere").scrollIntoView( {behavior: "smooth" })
+      })
 
 
     </script>
