@@ -367,6 +367,23 @@ li.nav-item:last-child .nav-link::after {
   margin: 0 auto;
   width: 67%;
 }
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 50px;
+}
+
+.navigation.fixed-header{
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.navigation .navbar-nav{
+  justify-content: center;
+}
 
 @media (max-width:991px){
   .navigation{

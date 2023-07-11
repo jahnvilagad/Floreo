@@ -7,3 +7,13 @@
           }, 1500);
         };
       })();
+
+
+      $(window).scroll(function(){
+        if ($(window).scrollTop() >= 300) {
+            $('.navigation').addClass('fixed-header');
+        }
+        else {
+            $('.navigation').removeClass('fixed-header');
+        }
+    });
