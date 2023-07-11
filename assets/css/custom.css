@@ -363,6 +363,11 @@ li.nav-item:last-child .nav-link::after {
   background-color: rgb(71,129,132);
 }
 
+.phlebotomy-training{
+  margin: 0 auto;
+  width: 67%;
+}
+
 @media (max-width:991px){
   .navigation{
     background: unset;
@@ -394,6 +399,12 @@ li.nav-item:last-child .nav-link::after {
   #navbarNav .nav-item:last-child{
     border-bottom: unset;
   }
+  #navbarNav{
+    margin-bottom: 1rem;
+  }
+  #navbarNav .nav-item:nth-child(4){
+    border-bottom: 1px solid #e3e9ef;
+  }
 }
 
 @media (max-width:767px){
@@ -412,5 +423,8 @@ li.nav-item:last-child .nav-link::after {
   }
   .slider-bg p {
     font-size: 14px !important;
+  }
+  .phlebotomy-training{
+    width: 100%;
   }
 }
