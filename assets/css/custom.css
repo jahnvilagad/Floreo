@@ -289,7 +289,7 @@ li.nav-item:last-child .nav-link::after {
   right: -6%;
 }
 
-.slide-1 h1{
+.slide-1 h1 , .bg-swipe h1{
   text-transform: uppercase;
 }
 .slide-1 h1 , .slide-1 p{
@@ -385,6 +385,16 @@ li.nav-item:last-child .nav-link::after {
   justify-content: center;
 }
 
+@media (max-width:1024px){
+  .slide-1 {
+    right: -21%;
+  }
+  .slide-2 {
+    left: 14%;
+    width: 53%;
+  }
+}
+
 @media (max-width:991px){
   .navigation{
     background: unset;
@@ -422,6 +432,9 @@ li.nav-item:last-child .nav-link::after {
   #navbarNav .nav-item:nth-child(4){
     border-bottom: 1px solid #e3e9ef;
   }
+  .slide-1 {
+    right: -55%;
+  }
 }
 
 @media (max-width:767px){
@@ -443,5 +456,44 @@ li.nav-item:last-child .nav-link::after {
   }
   .phlebotomy-training{
     width: 100%;
+  }
+  .slide-1 h1 {
+    font-size: 18px;
+  }
+  .slide-1 p {
+    font-size: 14px;
+  }
+  .slide-1 .border-12 {
+    border: 5px solid #fff;
+  }
+  .slide-1 .width , .slide-2 {
+    width: 33%;
+}
+  .slide-1 {
+    right: -74%;
+  }
+  .swiper-img {
+    height: 160px;
+  }
+  .slide-1 p , .slide-2 p{
+    font-size: 11px;
+    margin-bottom: 1px;
+}
+  .slide-1 h1 , .slide-2 h1 {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .swiper-img-ocn {
+    width: 67px;
+    height: 41px;
+  }
+  .slide-2 {
+    left: 23%;
+  }
+}
+
+@media (max-width:360px){
+  .slide-1 {
+    right: -95%;
   }
 }
