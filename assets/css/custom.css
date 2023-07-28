@@ -292,21 +292,25 @@ li.nav-item:last-child .nav-link::after {
 .slide-1 h1 , .bg-swipe h1{
   text-transform: uppercase;
 }
-.slide-1 h1 , .slide-1 p{
+/* .slide-1 h1 , .slide-1 p{
   animation: slideLeft 1.5s forwards;
   opacity: 0;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+} */
 .slide-1 .border-12 {
   border: 12px solid #fff;
-  
+  position: absolute;
+  right: 12rem;
+  transform: translateY(-50%);
 }
 
-.slide-1 .width{
-  width:47%;
+.slider-1 h1{
+  display: inline-block;
 }
+
 .slide-1 p{
   font-size: 21px;
+  display: inline-block;
 }
 
 .bg-swipe {
@@ -314,10 +318,6 @@ li.nav-item:last-child .nav-link::after {
   
 }
 
-.slide-2 {
-  left: 29%;
-  width: 23%;
-}
 .slide-2 p{
   font-size: 21px;
 }
@@ -384,6 +384,126 @@ li.nav-item:last-child .nav-link::after {
 .navigation .navbar-nav{
   justify-content: center;
 }
+
+.banner-wrap{
+	height: auto;
+	position: relative;
+	overflow: hidden;
+}
+.shape{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.shape svg{
+	width: 100%;
+}
+.banner-slider{
+	height: 100%;
+}
+.banner-slider > .banner-slide{
+	display: none;
+}
+.banner-slider > .banner-slide:first-child{
+	display: block;
+}
+.slick-initialized .banner-slide{
+	position: relative;
+	height: 580px;
+	/* padding-bottom: 300px; */
+	display:-webkit-flex !important;
+	display:flex !important;
+	-webkit-align-items:center;
+	align-items:center;
+}
+
+.banner-slider .slick-arrow{
+	position: absolute;
+	right: 25px;
+	bottom: 50px;
+	font-size: 0;
+	background: #ffffff;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 12;
+	cursor: pointer;
+	border-radius: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.12);
+}
+.banner-slider .slick-arrow:before{
+	font-family: "boxicons";
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	color: rgba(0,33,71,1);
+}
+.banner-slider .slick-arrow.slick-prev{
+	right: 95px;
+}
+.banner-slider .slick-arrow.slick-prev:before{
+	content: "\ea9b";
+}
+.banner-slider .slick-arrow.slick-next{
+	right: 25px;
+}
+.banner-slider .slick-arrow.slick-next:before{
+	content: "\eb1c";
+}
+.hero-image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+.banner-wrap .container{
+	position: relative;
+	z-index: 12;
+}
+.hero-content{	
+	color: #ffffff;
+}
+.hero-content p{
+	font-size: 20px;
+	line-height: 32px;
+	max-width: 600px;
+	color: rgba(255,255,255,0.9);
+	letter-spacing: 0.010em;
+}
+.blog-detail-banner .hero-content{
+	max-width: 900px;
+}
+.blog-detail-banner .hero-content h1{
+	font-size: 53px;
+}
+.hero-content h3{
+	font-size: 16px;
+	color: rgba(255,255,255,.6);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	position: relative;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: 12px;
+	margin-left: 6px;
+}
+.hero-content h1{
+	font-family: "Lato-Regular";
+}
+.hero-content .cta-btn{
+	padding-top: 30px;
+}
+.hero-content .cta-btn .cta-link.cta-outline-white:hover{
+	background: #ffffff;
+	color: rgba(0,33,71,1);
+}
+/*==============================================================
+	banner Style end
+==============================================================*/
 
 @media (max-width:1024px){
   .slide-1 {
