@@ -285,8 +285,12 @@ li.nav-item:last-child .nav-link::after {
   object-fit: cover;
 }
 
-.slide-1 {
+/* .slide-1 {
   right: -6%;
+} */
+
+.slide-1 .width , .slide-2 .width{
+  width: 39%;
 }
 
 .slide-1 h1 , .bg-swipe h1{
@@ -300,12 +304,118 @@ li.nav-item:last-child .nav-link::after {
 .slide-1 .border-12 {
   border: 12px solid #fff;
   position: absolute;
-  right: 12rem;
-  transform: translateY(-50%);
+  right: 14rem;
+  /* transform: translateY(-50%); */
+  top: 19%;
+}
+
+.bg-swipe {
+  background-color: rgb(242, 219, 213);
+  position: absolute;
+  left: 14rem;
+  /* transform: translateY(-50%); */
+  top: 19%;
+  
 }
 
 .slider-1 h1{
   display: inline-block;
+}
+
+.slide-1 .slider-right{
+  animation: stretchRight;
+  -webkit-animation: stretchRight;  
+
+  animation-duration: 1s;   
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-out;    
+  -webkit-animation-timing-function: ease-out;    
+
+  transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+}
+
+@keyframes stretchRight {
+  0% {
+      transform: scaleX(0);
+
+  }
+
+  100% {
+      transform: scaleX(1);
+  }                           
+}
+
+.slide-2 .bg-swipe h1 , .slide-2 .bg-swipe p{
+  animation: left_to_right 2s;
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+.slide-1 .slider-right h1{
+  animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-name: slidein-left;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+  font-size: 32px;
+}
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.slide-1 .slider-right p{
+  animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-name: slidein-left;
+  -moz-animation-name: slidein-left;
+  -webkit-animation-name: slidein-left;
+  animation-delay: 3s;
+}
+
+@keyframes slidein-left {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.slide-2 .slider-left{
+  animation: main 3s;
+  transform-origin: 100% 50%;
+}
+
+@keyframes main {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }                     
 }
 
 .slide-1 p{
@@ -313,10 +423,7 @@ li.nav-item:last-child .nav-link::after {
   display: inline-block;
 }
 
-.bg-swipe {
-  background-color: rgb(242, 219, 213);
-  
-}
+
 
 .slide-2 p{
   font-size: 21px;
