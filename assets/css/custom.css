@@ -290,7 +290,7 @@ li.nav-item:last-child .nav-link::after {
 } */
 
 .slide-1 .width , .slide-2 .width{
-  width: 39%;
+  width: 28%;
 }
 
 .slide-1 h1 , .bg-swipe h1{
@@ -304,9 +304,9 @@ li.nav-item:last-child .nav-link::after {
 .slide-1 .border-12 {
   border: 12px solid #fff;
   position: absolute;
-  right: 14rem;
-  /* transform: translateY(-50%); */
-  top: 19%;
+  right: 32rem;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
 .bg-swipe {
