@@ -620,6 +620,9 @@ li.nav-item:last-child .nav-link::after {
     left: 14%;
     width: 53%;
   }
+  .slider-bg p {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width:991px){
@@ -644,9 +647,9 @@ li.nav-item:last-child .nav-link::after {
   .navbar-nav{
     padding-bottom: 0;
   }
-  .slider-bg p{
-    font-size: 16px !important;
-  }
+  .slider-bg p {
+    font-size: 15px !important;
+}
   #navbarNav .nav-item{
     border-bottom: 1px solid #e3e9ef;
   }
@@ -679,7 +682,7 @@ li.nav-item:last-child .nav-link::after {
     margin-top: 1rem;
   }
   .slider-bg p {
-    font-size: 14px !important;
+    font-size: 20px !important;
   }
   .phlebotomy-training{
     width: 100%;
