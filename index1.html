@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/vender/lightgallery/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="assets/vender/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/slick.css"> -->
 </head>
 <body>
  <!-- Page loading spinner-->
@@ -73,52 +73,37 @@
       }">
               <div class="swiper-wrapper">
                 <div class="swiper-slide slide-1">
-                  <div class="">
-                    <img src="assets/img/banner/slide-1.webp" class="img-fluid" alt="Slider" title="Slider" width="1920" height="auto" loading="lazy">
-                    <div class="bg-primary p-2 p-md-4 border-12 width slider-right">
-                      <div class="container overflow-hidden">
-                        <div class="row">
-                          
-                                <h1 class="text-white">Phlebotomy Training</h1>
-                                <p class="text-lato text-white"><i>become a qualified phlebotomist and acquire skills in high demand by hospitals, healthcare clinics, GP practices and more!</i></p>
-                             
+                  <div class="swiper-display-text">
+                    <img src="assets/img/banner/slide-1.webp" class="img-fluid position-relative" alt="Slider" title="Slider" width="1920" height="auto" loading="lazy">
+                        <div class="bg-primary border-12 width slider-right p-2 p-md-4">
+                            <h1 class="text-white">Phlebotomy Training</h1>
+                            <p class="text-lato text-white"><i>become a qualified phlebotomist and acquire skills in high demand by hospitals, healthcare clinics, GP practices and more!</i></p>
                         </div>
-                        </div>
-                      
                     </div>
-                    
+                </div>
+                <div class="swiper-slide slide-2">
+                    <div class="swiper-display-text">
+                      <img src="assets/img/banner/slide-2.webp" class="img-fluid position-relative" alt="Slider" title="Slider" width="1920" height="auto" loading="lazy">
+                      
+                        <div class="bg-swipe width p-2 p-md-4 slider-left overflow-hidden">
+                            <h1 class="text-end slider-right">Accredited Course</h1>
+                              <p class="text-lato text-end slider-right"><i>for all backgrounds awarding Level 3 Certificate from National UK Awarding Body</i></p>
+
+                              <div class="swiper-img-ocn">
+                                <img src="assets/img/feature/ocn-credit4learning.png" class="img-fluid" alt="OCN Credit4Learning" title="OCN Credit4Learning" width="205" height="130" loading="lazy"> 
+                              </div>
+                        </div>
                   </div>
                 </div>
-                <!-- <div class="swiper-slide slide-2">
-                  <div class="">
-                    <img src="assets/img/banner/slide-2.webp" class="img-fluid" alt="Slider" title="Slider" width="1920" height="auto" loading="lazy">
-                    
-                      <div class="bg-swipe width p-2 p-md-4 slider-left">
-                        <div class="container">
-                          <div class="row">
-                            <div class="">
-                                  <h1 class="text-end slider-right">Accredited Course</h1>
-                                  <p class="text-lato text-end slider-right"><i>for all backgrounds awarding Level 3 Certificate from National UK Awarding Body</i></p>
-
-                                  <div class="swiper-img-ocn animate__animated animate__fadeIn animate__delay-2s">
-                                    <img src="assets/img/feature/ocn-credit4learning.png" class="img-fluid" alt="OCN Credit4Learning" title="OCN Credit4Learning" width="205" height="130" loading="lazy"> 
-                                  </div>
-                              
-                          </div>
-
-                          </div>
-                        
-                      </div>
-                      </div>
-                        
-                    
-                  </div>
-                </div> -->
-                <!-- <div class="swiper-slide bg-light">
-                  <div class="ratio ratio-16x9 bg-faded-warning">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-5">Third</div>
-                  </div>
-                </div> -->
+                <div class="swiper-slide slide-1">
+                  <div class="swiper-display-text">
+                    <img src="assets/img/banner/slide-3.webp" class="img-fluid position-relative" alt="Slider" title="Slider" width="1920" height="auto" loading="lazy">
+                        <div class="bg-white border-12 width slider-right p-2 p-md-4 overflow-hidden">
+                            <h1 class="">Clinical Experience</h1>
+                            <p class="text-lato"><i>take supervised bloods from real patients in a medical facility and achieve an NHS Certificate of Competency on completion</i></p>
+                        </div>
+                    </div>
+                </div>
               </div>
               <button class="btn btn-prev btn-icon btn-sm btn-outline-primary rounded-circle" type="button"><i class="ai-arrow-left"></i></button>
               <button class="btn btn-next btn-icon btn-sm btn-outline-primary rounded-circle" type="button"><i class="ai-arrow-right"></i></button>
@@ -186,51 +171,7 @@
       $(".btn-view").click(function() {
         document.getElementById("scrollHere").scrollIntoView( {behavior: "smooth" })
       })
-
-
-     
-
-
-      const slider = document.querySelector('.swiper-wrapper');
-      const slides = document.querySelectorAll('swiper-slide');
-
-      let currentIndex = 0;
-      const totalSlides = slides.length;
-      const slideWidth = slides[0].clientWidth;
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSliderPosition();
-        animateText();
-      }
-
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateSliderPosition();
-        animateText();
-      }
-
-      function updateSliderPosition() {
-        const offset = -currentIndex * slideWidth;
-        slider.style.transform = `translateX(${offset}px)`;
-      }
-
-      function animateText() {
-        gsap.to(".animation-text", { opacity: 0, duration: 1, delay: 1 });
-        gsap.to(".animation-text", { opacity: 1, duration: 1, delay: 2 });
-      }
-
-      // Automatic slide change every 3 seconds (adjust the interval as needed)
-      const interval = setInterval(nextSlide, 3000);
-
-      // Uncomment the following lines if you want to add navigation buttons
-      // const prevButton = document.querySelector('.prev-button');
-      // const nextButton = document.querySelector('.next-button');
-      // prevButton.addEventListener('click', prevSlide);
-      // nextButton.addEventListener('click', nextSlide);
-
-
-    </script>
+</script>
 
 </body>
 
